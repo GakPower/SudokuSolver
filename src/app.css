@@ -1,0 +1,36 @@
+.grid{
+	-fx-border-width: 4px;
+	-fx-border-color: gray;
+}
+.rightBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: transparent red transparent transparent;
+}
+.leftBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: transparent transparent transparent red;
+}
+.upLeftBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: red transparent transparent red;
+}
+.upRightBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: red red transparent transparent;
+}
+.downLeftBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: transparent transparent red red;
+}
+.downRightBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: transparent red red transparent;
+}
+.upBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: red transparent transparent transparent;
+}
+.downBorder{
+	-fx-border-width: 2px;
+	-fx-border-color: transparent transparent red transparent;
+}
