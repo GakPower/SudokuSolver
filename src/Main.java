@@ -23,7 +23,7 @@ public class Main extends Application {
 
 		primaryStage.setTitle("Sudoku Solver");
 		primaryStage.setResizable(false);
-		//primaryStage.initStyle(StageStyle.TRANSPARENT);
+		primaryStage.initStyle(StageStyle.TRANSPARENT);
 
 
 		Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("app.fxml"));

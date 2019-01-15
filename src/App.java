@@ -3,7 +3,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class App {
 
@@ -600,15 +600,52 @@ public class App {
 		field78.addAreas(new GroupArea(sudokuBox9, sudokuRow9, sudokuColumn8));
 		field88.addAreas(new GroupArea(sudokuBox9, sudokuRow9, sudokuColumn9));
 
+		ArrayList<SudokuArea> sudokuBoxes = new ArrayList<>();
+		sudokuBoxes.add(sudokuBox1);
+		sudokuBoxes.add(sudokuBox2);
+		sudokuBoxes.add(sudokuBox3);
+		sudokuBoxes.add(sudokuBox4);
+		sudokuBoxes.add(sudokuBox5);
+		sudokuBoxes.add(sudokuBox6);
+		sudokuBoxes.add(sudokuBox7);
+		sudokuBoxes.add(sudokuBox8);
+		sudokuBoxes.add(sudokuBox9);
+
+		ArrayList<SudokuArea> sudokuRows = new ArrayList<>();
+		sudokuRows.add(sudokuRow1);
+		sudokuRows.add(sudokuRow2);
+		sudokuRows.add(sudokuRow3);
+		sudokuRows.add(sudokuRow4);
+		sudokuRows.add(sudokuRow5);
+		sudokuRows.add(sudokuRow6);
+		sudokuRows.add(sudokuRow7);
+		sudokuRows.add(sudokuRow8);
+		sudokuRows.add(sudokuRow9);
+
+		ArrayList<SudokuArea> sudokuColumns = new ArrayList<>();
+		sudokuColumns.add(sudokuColumn1);
+		sudokuColumns.add(sudokuColumn2);
+		sudokuColumns.add(sudokuColumn3);
+		sudokuColumns.add(sudokuColumn4);
+		sudokuColumns.add(sudokuColumn5);
+		sudokuColumns.add(sudokuColumn6);
+		sudokuColumns.add(sudokuColumn7);
+		sudokuColumns.add(sudokuColumn8);
+		sudokuColumns.add(sudokuColumn9);
+
+		SudokuBoard sudokuBoard = new SudokuBoard(sudokuBoxes, sudokuRows, sudokuColumns);
+
 		solveButton.setOnAction((event -> {
-			for (GroupArea groupArea : GroupArea.getGroupsAreas()) {
-				for (Field field: groupArea.getFields()){
-					if (field.getNumber() == 0 && field.getPossipleNumbersList().size() == 1){
-						System.out.println(field.getField().getId());
-						field.getField().setText(field.getPossipleNumbersList().get(0)+"");
-					}
+			sudokuBoard.getFields().forEach(field -> {
+				if (field.getNumber() != 0){
+					field.setAsInitialField();
+					field.getField().setStyle("-fx-background-color: #d9d4d8");
+					field.getField().setEditable(false);
+					field.getField().setDisable(false);
 				}
-			}
+			});
+			//Field.solveNakedSingles(sudokuBoard);
+			Field.solveHiddenSingles(sudokuBoard);doulevei entelos lathos
 		}));
 	}
 }

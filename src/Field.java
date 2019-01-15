@@ -1,18 +1,8 @@
 import com.jfoenix.controls.JFXTextField;
-import javafx.application.Platform;
-import javafx.beans.InvalidationListener;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableSet;
-import javafx.collections.SetChangeListener;
-import javafx.util.converter.IntegerStringConverter;
-import javafx.util.converter.NumberStringConverter;
-
 import java.util.ArrayList;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 public class Field {
 	private JFXTextField textField;
@@ -21,6 +11,8 @@ public class Field {
 	private ObservableSet<Integer> possipleNumbers = FXCollections.observableSet();
 
 	private SimpleIntegerProperty numberProperty = new SimpleIntegerProperty(0);
+
+	private boolean initialField = false;
 
 	public Field(JFXTextField textField) {
 		this.textField = textField;
@@ -36,7 +28,7 @@ public class Field {
 		possipleNumbers.add(9);
 
 		setUpListener();
-		freeNumberListener();
+		numberPropertyListener();
 
 	}
 
@@ -53,10 +45,6 @@ public class Field {
 				}
 				this.numberProperty.set(number);
 				this.getField().setText(number+"");
-
-				/*System.out.println();
-				this.possipleNumbers.forEach(System.out::println);*/
-
 			} else {
 				textField.setText(textField.getText().replaceAll("[^1-9]", ""));
 			}
@@ -82,7 +70,7 @@ public class Field {
 		return fields;
 	}
 
-	private void freeNumberListener(){
+	private void numberPropertyListener(){
 		numberProperty.addListener((observable, oldValue, newValue) -> {
 			updatePossibleNumbers();
 			this.getSudokuGroupArea().updateFreeNumbers();
@@ -99,9 +87,6 @@ public class Field {
 	public Integer getNumber(){
 		return numberProperty.get();
 	}
-	public void setNumber(int number){
-		numberProperty.set(number);
-	}
 
 	public void addAreas(GroupArea groupArea){
 		this.sudokuGroupArea = groupArea;
@@ -109,13 +94,6 @@ public class Field {
 
 	public GroupArea getSudokuGroupArea() {
 		return sudokuGroupArea;
-	}
-
-	public void addPossibleNumber(int number){
-		possipleNumbers.add(number);
-	}
-	public void removePossibleNumber(int number){
-		possipleNumbers.remove(number);
 	}
 
 	public void updatePossibleNumbers(){
@@ -130,4 +108,43 @@ public class Field {
 			possipleNumbers.add(i);
 		}
 	}
+
+	public boolean isInitialField(){
+		return initialField;
+	}
+	public void setAsInitialField(){
+		initialField = true;
+	}
+
+	//================= Solving Strategies ==================
+	public static void solveNakedSingles(SudokuBoard sudokuBoard){
+		new Thread(()-> {
+			for (Field field : sudokuBoard.getFields()) {
+				if (!field.isInitialField() && field.getPossipleNumbersList().size() == 1) {
+					field.getField().setText(field.getPossipleNumbersList().get(0) + "");
+				}
+			}
+		}).start();
+	}
+
+	public static void solveHiddenSingles(SudokuBoard sudokuBoard){
+		new Thread(()->{
+			for (SudokuArea sudokuArea: sudokuBoard.getAreas()){
+				for (Field field: sudokuArea.getFields()){
+					for (Integer integer: field.getPossipleNumbersList()){
+						boolean single = true;
+						for (Field field1: sudokuArea.getFields()){
+							if (!field.isInitialField() && !field1.isInitialField() && field != field1 && field1.getPossipleNumbersList().contains(integer)){
+								single = false;
+							}
+						}
+						if (single){
+							field.getField().setText(integer+"");
+						}
+					}
+				}
+			}
+		}).start();
+	}
+	//================= Solving Strategies ==================
 }

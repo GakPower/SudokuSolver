@@ -2,6 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -9,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App">
-   <AnchorPane prefHeight="540.0" prefWidth="700.0">
+   <AnchorPane prefHeight="549.0" prefWidth="700.0" styleClass="anchor-pane" stylesheets="@app.css">
       <GridPane prefHeight="540.0" prefWidth="540.0" styleClass="grid" stylesheets="@app.css">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -33,412 +35,904 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
-         <JFXTextField fx:id="textField00" alignment="CENTER" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00">
+         <JFXTextField fx:id="textField00" alignment="CENTER" focusColor="#405aa800" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField10" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1">
+         <JFXTextField fx:id="textField10" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField20" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2">
+         <JFXTextField fx:id="textField20" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField30" alignment="CENTER" layoutX="130.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3">
+         <JFXTextField fx:id="textField30" alignment="CENTER" focusColor="#405aa800" layoutX="130.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField40" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4">
+         <JFXTextField fx:id="textField40" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField50" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5">
+         <JFXTextField fx:id="textField50" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField60" alignment="CENTER" layoutX="70.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6">
+         <JFXTextField fx:id="textField60" alignment="CENTER" focusColor="#405aa800" layoutX="70.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField70" alignment="CENTER" layoutX="130.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7">
+         <JFXTextField fx:id="textField70" alignment="CENTER" focusColor="#405aa800" layoutX="130.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField80" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8">
+         <JFXTextField fx:id="textField80" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField01" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField01" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField11" alignment="CENTER" layoutX="70.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField11" alignment="CENTER" focusColor="#405aa800" layoutX="70.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField21" alignment="CENTER" layoutX="130.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField21" alignment="CENTER" focusColor="#405aa800" layoutX="130.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField31" alignment="CENTER" layoutX="190.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField31" alignment="CENTER" focusColor="#405aa800" layoutX="190.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField41" alignment="CENTER" layoutX="250.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField41" alignment="CENTER" focusColor="#405aa800" layoutX="250.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField51" alignment="CENTER" layoutX="310.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField51" alignment="CENTER" focusColor="#405aa800" layoutX="310.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField61" alignment="CENTER" layoutX="370.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField61" alignment="CENTER" focusColor="#405aa800" layoutX="370.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField71" alignment="CENTER" layoutX="430.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField71" alignment="CENTER" focusColor="#405aa800" layoutX="430.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField81" alignment="CENTER" layoutX="490.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="1">
+         <JFXTextField fx:id="textField81" alignment="CENTER" focusColor="#405aa800" layoutX="490.0" layoutY="10.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="1">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField02" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField02" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField12" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField12" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField22" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField22" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField32" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField32" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField42" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField42" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField52" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField52" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField62" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField62" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField72" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField72" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField82" alignment="CENTER" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="2">
+         <JFXTextField fx:id="textField82" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="70.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="2">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField03" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField03" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField13" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField13" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField23" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField23" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField33" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField33" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField43" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField43" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField53" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField53" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField63" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField63" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField73" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField73" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField83" alignment="CENTER" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="3">
+         <JFXTextField fx:id="textField83" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="130.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="3">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField04" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField04" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField14" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField14" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField24" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField24" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField34" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField34" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField44" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField44" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField54" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField54" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField64" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField64" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField74" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField74" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField84" alignment="CENTER" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="4">
+         <JFXTextField fx:id="textField84" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="190.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="4">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField05" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField05" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField15" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField15" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField25" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField25" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField35" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField35" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField45" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField45" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField55" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField55" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField65" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField65" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField75" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField75" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField85" alignment="CENTER" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="downBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="5">
+         <JFXTextField fx:id="textField85" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="250.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="5">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="7.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField06" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField06" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField16" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField16" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField26" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField26" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField36" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField36" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField46" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField46" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField56" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upRightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField56" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField66" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upLeftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField66" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField76" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField76" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField86" alignment="CENTER" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="upBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="6">
+         <JFXTextField fx:id="textField86" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="310.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="6">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField07" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField07" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField17" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField17" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField27" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField27" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField37" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField37" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField47" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField47" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField57" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField57" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField67" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField67" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField77" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField77" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField87" alignment="CENTER" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="7">
+         <JFXTextField fx:id="textField87" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="370.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="7">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField08" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField08" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField18" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField18" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="1" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField28" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField28" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="2" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField38" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField38" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="3" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField48" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField48" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="4" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField58" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="rightBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField58" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="5" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="4.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField68" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" styleClass="leftBorder" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField68" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="6" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField78" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField78" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="7" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
-         <JFXTextField fx:id="textField88" alignment="CENTER" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" promptText="0" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="8">
+         <JFXTextField fx:id="textField88" alignment="CENTER" focusColor="#405aa800" layoutX="10.0" layoutY="430.0" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" styleClass="field" stylesheets="@app.css" unFocusColor="#4d4d4d00" GridPane.columnIndex="8" GridPane.rowIndex="8">
             <font>
                <Font name="System Bold" size="38.0" />
             </font>
+            <GridPane.margin>
+               <Insets left="8.0" top="14.0" />
+            </GridPane.margin>
+            <cursor>
+               <Cursor fx:constant="DISAPPEAR" />
+            </cursor>
          </JFXTextField>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
       </GridPane>
-      <JFXButton fx:id="solveButton" layoutX="593.0" layoutY="65.0" mnemonicParsing="false" text="Solve" />
+      <JFXButton fx:id="solveButton" layoutX="570.0" layoutY="26.0" mnemonicParsing="false" ripplerFill="WHITE" styleClass="solveButton" stylesheets="@app.css" text="Solve" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></JFXButton>
    </AnchorPane>
 </AnchorPane>

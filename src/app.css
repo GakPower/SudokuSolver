@@ -1,36 +1,28 @@
-.grid{
-	-fx-border-width: 4px;
-	-fx-border-color: gray;
+* {
+	-fx-primary: #980B0B;
+	-fx-background: #660000;
 }
-.rightBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: transparent red transparent transparent;
+.anchor-pane{
+	-fx-background-color: -fx-primary;
 }
-.leftBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: transparent transparent transparent red;
+.field{
+	-fx-background-color: white;
+	-fx-background-radius: 0px;
+	-fx-border-width: 0.02em;
+	-fx-border-radius: 0px;
+	-fx-border-color: -fx-primary;
+	-fx-display-caret: false;
+	-fx-highlight-fill: transparent;
+	-fx-highlight-text-fill: #323232;
 }
-.upLeftBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: red transparent transparent red;
+.field:focused{
+	-fx-background-color: rgb(203, 11, 11);
 }
-.upRightBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: red red transparent transparent;
-}
-.downLeftBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: transparent transparent red red;
-}
-.downRightBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: transparent red red transparent;
-}
-.upBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: red transparent transparent transparent;
-}
-.downBorder{
-	-fx-border-width: 2px;
-	-fx-border-color: transparent transparent red transparent;
+.solveButton{
+	-fx-border-color: -fx-background;
+	-fx-background-color: transparent;
+	-fx-border-width: 3px;
+	-fx-border-radius: 25px;
+	-fx-background-radius: 25px;
+
 }

@@ -42,38 +42,10 @@ public class GroupArea {
 		freeNumbers.add(7);
 		freeNumbers.add(8);
 		freeNumbers.add(9);
-
-		freeNumberListener();
 	}
 
-	private void freeNumberListener(){
-		freeNumbers.addListener((SetChangeListener<? super Integer>) c -> {
-			int number;
-			if (c.wasAdded()){
-				number = Integer.parseInt(String.valueOf(c).substring(6));
-				for (Field field: fields){
-					field.addPossibleNumber(number);
-				}
-			}else if (c.wasRemoved()){
-				number = Integer.parseInt(String.valueOf(c).substring(8));
-				for (Field field: fields){
-					field.removePossibleNumber(number);
-				}
-			}
-		});
-	}
-
-	public void addFreeNumber(Integer number){
-		freeNumbers.add(number);
-	}
-	public void removeFreeNumber(Integer number){
-		freeNumbers.remove(number);
-	}
 	public ArrayList<Field> getFields(){
 		return new ArrayList<>(fields);
-	}
-	public ArrayList<Integer> getFreeNumbers(){
-		return new ArrayList<>(freeNumbers);
 	}
 
 	public void updateFreeNumbers(){
